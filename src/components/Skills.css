@@ -1,0 +1,44 @@
+.section-skills {
+    background-color: rgb(240, 178, 186);
+    display: flex;
+}
+
+.container-skills {
+    width: 75%;
+    margin: 8rem auto;
+}
+
+.container-skills h2 {
+    margin-bottom: 1rem;  
+    font-size: 1.5rem; 
+}
+
+.skills {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills div .bi {
+    font-size: 2rem;
+}
+
+.skills div div {
+    background-color: #fff;
+    width: 3rem;
+    display: flex;
+    margin: 0 auto 0.5rem;
+    border-radius: 4px;
+}
+
+.skills h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+

@@ -3,11 +3,14 @@ import './Hero.css';
 
 function Hero() {
   return (
-    <div className="hero">
+    <section>
+      <div className="hero" id='home'>
       <div className="hero-content">
         
       </div>
     </div>
+
+    </section>
   );
 }
 

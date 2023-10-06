@@ -6,6 +6,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado botón hamburguesa
   const [isMenuClicked, setIsMenuClicked] = useState(false); 
   const [isNoBoxShadow, setIsNoBoxShadow] = useState(false);
+  
 
   // Crea una función para alternar el estado del menú
   const toggleMenu = () => {
@@ -46,9 +47,9 @@ function Navbar() {
           <li className="menu-contact"><a href="#contact" className={isScrolled ? 'scrolled-link' : ''}>CONTACT</a></li>
         </div>
         <div className='menu-icons'>
-        <li className="menu-icon-linkedin"><a href="https://www.linkedin.com/in/florenciaceresa/" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i class="bi bi-linkedin"></i></a></li>
-        <li className="menu-icon-github"><a href="https://github.com/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i class="bi bi-github"></i></a></li>
-        <li className="menu-icon-behance"><a href="https://www.behance.net/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i class="bi bi-behance"></i></a></li>
+        <li className="menu-icon-linkedin"><a href="https://www.linkedin.com/in/florenciaceresa/" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i className="bi bi-linkedin"></i></a></li>
+        <li className="menu-icon-github"><a href="https://github.com/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i className="bi bi-github"></i></a></li>
+        <li className="menu-icon-behance"><a href="https://www.behance.net/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i className="bi bi-behance"></i></a></li>
         </div>
       </ul>
     </nav>

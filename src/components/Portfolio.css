@@ -1,0 +1,48 @@
+.section-portfolio {
+    display: flex;
+}
+
+.container-portfolio {
+    width: 75%;
+    margin: 8rem auto;
+    height: 10rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.projects div div {
+    width: 18rem;
+    height: 18rem;
+    background-color: gray;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.projects div {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1.1rem;
+}
+
+.projects a:hover {
+    color: var(--first-color);
+}
+
+.container-portfolio h2 {
+    margin-bottom: 1rem;  
+    font-size: 1.5rem; 
+}

@@ -1,0 +1,10 @@
+.section-footer {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+}
+
+.section-footer p {
+    margin: 0 auto;
+    display: flex;
+}
