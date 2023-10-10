@@ -16,7 +16,7 @@ function Skills() {
                     <div>
                         <div><i className="bi bi-code"></i></div>
                         <h3>DESARROLLO</h3>
-                        <p>HTML, CSS, Bootstrap, JavaScript, JQuery, Git</p>
+                        <p>HTML, CSS, Bootstrap, JavaScript, React, JQuery, Git</p>
                     </div>
                     <div>
                         <div><i className="bi bi-bar-chart-line"></i></div>

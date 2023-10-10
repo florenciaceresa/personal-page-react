@@ -1,6 +1,6 @@
 .section-linktocontact {
     display: flex;
-    background-color: darkgrey;
+    background-color: var(--first-color);
 }
 
 .container-linktocontact {
@@ -9,3 +9,27 @@
     display: flex;
     flex-direction: column;
 }
+
+.container-linktocontact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-linktocontact .btn-primary {
+    background-color: transparent;
+    border: 1px solid var(--third-color);
+    color: var(--font-color);
+    width: 8rem;
+    text-decoration: none;
+}
+
+.container-linktocontact .btn-primary:hover {
+    background-color: var(--third-color);
+}
+
+.container-linktocontact p a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+}
+

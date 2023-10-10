@@ -8,8 +8,8 @@ function Project({ id, nombre, imagen }) {
     <div className="container-portfolio">
       <div className="container-project">
         <img src={imagen} className="img-project"/>
-        <h2>{nombre}</h2>
-        <Link to={`/proyecto/${id}`}>VER PROYECTO</Link>
+        <h3>{nombre}</h3>
+        <Link to={`/proyecto/${id}`} className="see-project">VER PROYECTO</Link>
       </div>
     </div>
   );

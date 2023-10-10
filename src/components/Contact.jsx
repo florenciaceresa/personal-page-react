@@ -1,12 +1,17 @@
 import React from "react";
 import './Contact.css';
+import Footer from "./Footer";
 
 function Contact() {
+    const footerColor = {
+        backgroundColor: '#e7c4bb', // Cambia este valor al color deseado
+    };
     return(
-        <section className="section-contact" id="contact">
+        <div>
+            <section className="section-contact">
             <div className="container-contact">
                 <h2>CONTACTAME</h2>
-                <p>Completá el formulario o contactame a través de mi email. ¡Tengo muchas ganas de seguir sumando nuevas experiencias! ¡Espero tu mensaje!</p>
+                <p>Completá el formulario o contactame a través de mi email. ¡Tengo muchas ganas de seguir sumando nuevas experiencias y creciendo en este hermoso mundo IT! ¡Espero tu mensaje!</p>
                 <div className="contact-item">
                         <div className="information">
                             <i className="bi bi-geo-alt-fill location"><a href="https://goo.gl/maps/CQzhxm2fiYZLmGFCA" target="_blank">&nbsp; Inriville, Córdoba, Argentina</a></i>
@@ -37,6 +42,12 @@ function Contact() {
                     </div>
             </div>
         </section>
+        <Footer style={footerColor}/>
+        </div>
+        
     )
 }
 export default Contact
+
+
+

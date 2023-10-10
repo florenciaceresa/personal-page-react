@@ -1,33 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css'; 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);   //Estado barra de navegación al hacer scroll
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado botón hamburguesa
-  const [isMenuClicked, setIsMenuClicked] = useState(false); 
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
   const [isNoBoxShadow, setIsNoBoxShadow] = useState(false);
-  
 
-  // Crea una función para alternar el estado del menú
+  const location = useLocation(); // Obtener la ubicación actual
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    setIsMenuClicked(!isMenuClicked); 
+    setIsMenuClicked(!isMenuClicked);
     setIsNoBoxShadow(!isMenuOpen);
   };
 
-
-
   useEffect(() => {
     const handleScroll = () => {
-      // Verifica si la posición del scroll es mayor que un valor determinado (puedes ajustar este valor)
       setIsScrolled(window.scrollY > 0);
     };
 
-    // Agrega un event listener para el evento de scroll
     window.addEventListener('scroll', handleScroll);
 
-    // Limpia el event listener cuando el componente se desmonta
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -42,15 +37,35 @@ function Navbar() {
       </button>
       <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''} ${isScrolled && isMenuOpen ? 'scrolled-menu-open' : ''}`}>
         <div className="menu-options">
-          <li className="menu-home"><Link to="/" className={isScrolled ? 'scrolled-link' : ''}>INICIO</Link></li>
-          <li className="menu-about"><Link to="/nosotros" className={isScrolled ? 'scrolled-link' : ''}>SOBRE MÍ</Link></li>
-          <li className="menu-portfolio"><Link to="/portfolio" className={isScrolled ? 'scrolled-link' : ''}>PORTFOLIO</Link></li>
-          <li className="menu-contact"><Link to="/contacto" className={isScrolled ? 'scrolled-link' : ''}>CONTACTO</Link></li>
+          <li className="menu-home">
+            <Link to="/" className={` ${location.pathname === '/' ? 'active' : ''} menu-option-item`}>INICIO</Link>
+          </li>
+          <li className="menu-about">
+            <Link to="/nosotros" className={`${location.pathname === '/nosotros' ? 'active' : ''} menu-option-item`}>SOBRE MI</Link>
+          </li>
+          <li className="menu-portfolio">
+            <Link to="/portfolio" className={`${location.pathname === '/portfolio' ? 'active' : ''} menu-option-item`}>PORTFOLIO</Link>
+          </li>
+          <li className="menu-contact">
+            <Link to="/contacto" className={`${location.pathname === '/contacto' ? 'active' : ''} menu-option-item`}>CONTACTO</Link>
+          </li>
         </div>
         <div className='menu-icons'>
-        <li className="menu-icon-linkedin"><a href="https://www.linkedin.com/in/florenciaceresa/" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i className="bi bi-linkedin"></i></a></li>
-        <li className="menu-icon-github"><a href="https://github.com/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i className="bi bi-github"></i></a></li>
-        <li className="menu-icon-behance"><a href="https://www.behance.net/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i className="bi bi-behance"></i></a></li>
+          <li className="menu-icon-linkedin">
+            <a href="https://www.linkedin.com/in/florenciaceresa/" target='blank' className={isScrolled ? 'scrolled-link' : ''}>
+              <i className="bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li className="menu-icon-github">
+            <a href="https://github.com/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}>
+              <i className="bi bi-github"></i>
+            </a>
+          </li>
+          <li className="menu-icon-behance">
+            <a href="https://www.behance.net/florenciaceresa" target='blank' className={isScrolled ? 'scrolled-link' : ''}>
+              <i className="bi bi-behance"></i>
+            </a>
+          </li>
         </div>
       </ul>
     </nav>

@@ -1,0 +1,48 @@
+.description-portfolio h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-portfolio {
+    display: flex;
+    flex-direction: row; /* Alinea los proyectos horizontalmente */
+    justify-content: space-around; /* Espacio uniforme entre proyectos */
+    width: 75%;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.container-project {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.img-project {
+    width: 18rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.description-portfolio {
+    margin-bottom: 2rem;
+}
+
+.section-portfolio {
+    margin: 6rem auto;
+}
+
+.container-project h3 {
+    font-size: var(--first-font-family);
+    font-size: 1.2rem;
+}
+
+.container-project .see-project {
+    text-decoration: none;
+    color: var(--font-first-color);
+}
+
+.container-project .see-project:hover {
+    color: var(--first-color);
+    font-weight: 400;
+}

@@ -25,7 +25,8 @@
 }
 
 .skills div .bi {
-    font-size: 2rem;
+    font-size: 3rem;
+    color: var(--first-color);
 }
 
 .skills div div {

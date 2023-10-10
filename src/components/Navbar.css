@@ -1,14 +1,13 @@
-.navbar {
-    background-color: rgb(253, 238, 240);
+.navbar { /*Barra de navegación*/
+    background-color: var(--second-color);
     display: flex;
     height: 90px;
     justify-content: center;
     transition: background-color 0.3s ease; 
     z-index: 10000;
-
 }
 
-.navbar-menu {
+.navbar-menu { /*Contenedor items barra de navegación*/
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -16,33 +15,37 @@
     width: 85%;
 }
 
-.menu-options {
+.menu-options { /*Items barra de navegación*/
     display: flex;
     gap: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
-.menu-icons {
+.menu-options .menu-option-item:hover { /*Items:hover barra de navegación*/
+  font-weight: bold;
+}
+
+.menu-icons { /*Iconos barra de navegación*/
     display: flex;
     gap: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-li {
+.menu-icons a:hover { /*Iconos:hover barra de navegación*/
+  color: var(--first-color);
+}
+
+li { 
     list-style-type: none;
 }
 
 li a {
     text-decoration: none;
-    color: var(--font-first-color);
+    color: var(--font-color);
     font-family: 'Public Sans', sans-serif;
 }
 
-a:hover {
-    color: var(--first-color);
-}
-
-nav.scrolled {
+nav.scrolled { /*Barra de navegación al hacer scroll*/
     background-color: #fff; 
     position: fixed;
     width: 100%;
@@ -50,15 +53,13 @@ nav.scrolled {
     top: 0;
   }
 
-
-
 .navbar.scrolled .menu-options a.scrolled-link,
-.navbar.scrolled .menu-icons a.scrolled-link {
+.navbar.scrolled .menu-icons a.scrolled-link { /*Color items/iconos barra de navegación al hacer scroll*/
     color: #000;
 }
 
 .navbar.scrolled .menu-options a.scrolled-link:hover,
-.navbar.scrolled .menu-icons a.scrolled-link:hover {
+.navbar.scrolled .menu-icons a.scrolled-link:hover { /*Color items/iconos:hover barra de navegación al hacer scroll*/
     color: var(--first-color);
 }
 
@@ -66,12 +67,14 @@ nav.scrolled {
     display: none;
 }
 
-.active-menu {
-  color: var(--first-color);
+.active { /*Link activo*/
+  font-weight: bold;
 }
 
+
+
 @media (max-width: 768px) {
-    .menu-toggle {
+    .menu-toggle { /*Botón hamburguesa*/
         display: block;
         cursor: pointer;
         border: none;
@@ -79,16 +82,12 @@ nav.scrolled {
         margin-left: 2rem;
     }
 
-    .menu-toggle .bar {
-        background-color: #fff;
+    .menu-toggle .bar { /*Líneas botón hamburguesa*/
+        background-color: var(--font-color);
         height: 2px;
         width: 25px;
         margin: 6px 0;
         transition: 0.4s;
-      }
-
-      .scrolled .menu-toggle .bar {
-        background-color: #000; /* Cambia esto al color deseado */
       }
     
       .open .bar:nth-child(1) {
@@ -105,8 +104,6 @@ nav.scrolled {
         background-color: var(--first-color);
       }
 
-      
-    
       .navbar-menu {
         display: none; /* Oculta el menú en pantallas pequeñas */
         flex-direction: column;
@@ -133,22 +130,22 @@ nav.scrolled {
       }
 
       li a {
-        color: #000;
+        color: var(--font-first-color);
       }
 
-      .menu-icons {
+      .menu-icons { /*Ocultar iconos*/
         display: none;
       }
 
-      .menu-clicked {
+      .menu-clicked { /*Barra de navegación clickeada*/
         background-color: #fff;
       }
 
-      .navbar-menu.open.scrolled-menu-open {
+      .navbar-menu.open.scrolled-menu-open { /*Sombra barra de navegación al hacer scroll*/
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
       }
 
-      .navbar.no-box-shadow {
+      .navbar.no-box-shadow { /*Barra de navegación sin sombra*/
         box-shadow: none;
       }
     }
