@@ -1,0 +1,11 @@
+.section-linktocontact {
+    display: flex;
+    background-color: darkgrey;
+}
+
+.container-linktocontact {
+    width: 75%;
+    margin: 8rem auto;
+    display: flex;
+    flex-direction: column;
+}

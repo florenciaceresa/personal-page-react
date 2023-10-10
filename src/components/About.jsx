@@ -2,10 +2,12 @@ import React from 'react';
 import './About.css';
 import BtnPrimary from './BtnPrimary';
 import imagen from '../assets/fotoperfil1.png';
+import LinkToContact from './LinkToContact';
 
 function About() {
     return (
-        <section className='section-about' id='about'>
+        <div>
+            <section className='section-about' id='about'>
              <div className="container-about">
                 <div className="about-info">
                 <h2>SOBRE MÍ</h2>
@@ -19,6 +21,8 @@ function About() {
                 </div>
             </div>
         </section>
+        <LinkToContact/>
+        </div>
     );
 }
 export default About;

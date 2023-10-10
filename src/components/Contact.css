@@ -64,3 +64,63 @@ label {
 .form .btn {
     width: 4.5rem;
 }
+
+
+
+@media (max-width: 768px) {
+    .section-contact {
+        margin-top: 82rem;
+    }
+
+    .container-contact {
+        margin: 4rem auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-item {
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        align-items: start;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .form div input, 
+    .form div textarea {
+        width: 19rem;
+
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-contact {
+        margin-top: 45rem;
+    }
+
+    .container-contact {
+        margin: 6rem auto;
+    }
+
+
+    .information .bi {
+        font-size: 1rem;
+    }
+
+    .form div input, 
+    .form div textarea {
+        width: 25rem;
+
+    }
+
+}

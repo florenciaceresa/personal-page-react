@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css'; 
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);   //Estado barra de navegación al hacer scroll
@@ -41,10 +42,10 @@ function Navbar() {
       </button>
       <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''} ${isScrolled && isMenuOpen ? 'scrolled-menu-open' : ''}`}>
         <div className="menu-options">
-          <li className="menu-home"><a href="#home" className={isScrolled ? 'scrolled-link' : ''}>INICIO</a></li>
-          <li className="menu-about"><a href="#about" className={isScrolled ? 'scrolled-link' : ''}>ABOUT</a></li>
-          <li className="menu-portfolio"><a href="#portfolio" className={isScrolled ? 'scrolled-link' : ''}>PORTFOLIO</a></li>
-          <li className="menu-contact"><a href="#contact" className={isScrolled ? 'scrolled-link' : ''}>CONTACT</a></li>
+          <li className="menu-home"><Link to="/" className={isScrolled ? 'scrolled-link' : ''}>INICIO</Link></li>
+          <li className="menu-about"><Link to="/nosotros" className={isScrolled ? 'scrolled-link' : ''}>SOBRE MÍ</Link></li>
+          <li className="menu-portfolio"><Link to="/portfolio" className={isScrolled ? 'scrolled-link' : ''}>PORTFOLIO</Link></li>
+          <li className="menu-contact"><Link to="/contacto" className={isScrolled ? 'scrolled-link' : ''}>CONTACTO</Link></li>
         </div>
         <div className='menu-icons'>
         <li className="menu-icon-linkedin"><a href="https://www.linkedin.com/in/florenciaceresa/" target='blank' className={isScrolled ? 'scrolled-link' : ''}><i className="bi bi-linkedin"></i></a></li>

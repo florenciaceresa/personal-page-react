@@ -66,6 +66,10 @@ nav.scrolled {
     display: none;
 }
 
+.active-menu {
+  color: var(--first-color);
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
