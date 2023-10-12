@@ -1,26 +1,24 @@
-.footer {
-    display: flex;
+footer.footer {
     height: 6rem;
+    display: flex;
+    width: 100%;
     align-items: center;
 }
 
-.footer p {
-    margin: 0 auto;
+p.footer-p {
     display: flex;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 
 
 
 @media (max-width: 768px) {
-    .section-footer {
-        height: 6rem;
-    }
-
-    .section-footer p {
-        margin: 0 3rem;
+    p.footer-p {
+        font-size: 0.9rem;
         text-align: center;
-        font-size: 0.8rem;
     }
+    
 
 }

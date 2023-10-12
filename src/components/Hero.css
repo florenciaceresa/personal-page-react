@@ -18,9 +18,6 @@
     font-family: var(--second-font-family); 
 }
 
-.info p {
-    margin-bottom: 1.5rem;
-}
 
 .info .description {
     font-size: 1.5rem;
@@ -29,8 +26,45 @@
 .hero-img {
     width: 70rem;
     height: 20rem;
-    background-color: var(--first-color);
     border-radius: 4px;
+    background-image: url("../assets/img-fondo-hero1.svg");
+    background-repeat: no-repeat;
+}
+
+.hero-img img {
+    width: 20rem;
+}
+
+
+
+@media (max-width: 992px) {
+
+    .container-hero {
+        flex-direction: column;
+        width: 75%;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .hero-img {
+        display: flex;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 2.5rem;
+    }
+
+    .info .description {
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -39,56 +73,29 @@
 
     .container-hero {
         flex-direction: column;
-        margin: 4rem auto;
-        gap: 3rem;
-    }
-
-    .info {
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .hero-img {
-        display: flex;
-    }
-
-
-    .hero-img img {
-        order: 1;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        margin: 0 auto;
-        
-    }
-
-
-}
-
-
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .container-hero {
-        display: flex;
         width: 75%;
-        margin: 6rem auto;
-        flex-direction: column;
-        gap: 4rem;
+        justify-content: center;
+        gap: 2rem;
     }
 
     .info {
+        order: 2;
         display: flex;
         flex-direction: column;
         text-align: center;
-        order: 2;
     }
 
-   
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .info .description {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+
+
 
 
 }

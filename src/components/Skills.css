@@ -47,7 +47,6 @@
     .container-skills {
         display: flex;
         flex-direction: column;
-        text-align: center;
         margin: 4rem auto;
     }
 
