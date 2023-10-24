@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 function Portfolio() {
   const proyectos = [
-    { id: 1, nombre: "Proyecto 1", imagen: Imagen1 },
+    { id: 1, nombre: "Donata - Landing page", imagen: Imagen1 },
     { id: 2, nombre: "Proyecto 2", imagen: Imagen1 },
     { id: 3, nombre: "Proyecto 3", imagen: Imagen1 },
     // Agrega más proyectos aquí
