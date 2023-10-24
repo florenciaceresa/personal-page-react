@@ -68,13 +68,8 @@ label {
 
 
 @media (max-width: 768px) {
-    .section-contact {
-        margin-top: 82rem;
-    }
-
     .container-contact {
         margin: 4rem auto;
-        text-align: center;
         display: flex;
         flex-direction: column;
     }

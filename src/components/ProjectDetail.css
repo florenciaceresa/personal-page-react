@@ -54,3 +54,23 @@
     color: var(--font-color);
     text-decoration: none;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .container-project-detail {
+        flex-direction: column;
+        margin: 4rem auto 0;
+    }
+
+    .img-project-detail {
+        width: 100%;
+    }
+
+    .description-project {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+}
