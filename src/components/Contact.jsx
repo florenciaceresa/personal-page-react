@@ -1,6 +1,7 @@
 import React from "react";
 import './Contact.css';
 import Footer from "./Footer";
+import Formulario from "./Form";
 
 function Contact() {
     const footerColor = {
@@ -22,23 +23,7 @@ function Contact() {
                                 <a href="https://www.behance.net/florenciaceresa" target="_blank"><i className="bi bi-behance fs-3"></i></a>
                             </div>
                         </div>
-                        <div className="form">
-                            <div className="input">
-                                <label htmlFor="name">Nombre y Apellido</label>
-                                <input type="text" name="name" className="input-form" required/>
-                            </div>
-                            <div className="input">
-                                <label htmlFor="email">Correo electrónico</label>
-                                <input type="email" name="email" className="input-form" required/>
-                            </div>
-                            <div className="input">
-                                <label htmlFor="comments">Mensaje</label>
-                                <textarea name="comments" required></textarea>
-                            </div>
-                            <div>
-                                <input className="btn btn-secondary" type="submit" value="Enviar"/>
-                            </div>
-                        </div>
+                        <Formulario/>
                     </div>
             </div>
         </section>

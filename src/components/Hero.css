@@ -82,16 +82,18 @@
         order: 2;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
     }
 
     .info h1 {
         font-size: 2rem;
+        margin: 0 auto;
     }
 
     .info .description {
         font-size: 1.2rem;
         margin-bottom: 2rem;
+        text-align: center;
     }
 
 

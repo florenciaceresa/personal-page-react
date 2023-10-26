@@ -39,12 +39,14 @@
 
 .form {
     margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .form div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5rem;
 }
 
 label {
@@ -59,9 +61,6 @@ label {
     border: 1px solid gray;
 }
 
-.form .btn {
-    width: 4.5rem;
-}
 
 
 
@@ -69,7 +68,7 @@ label {
 
 @media (max-width: 768px) {
     .container-contact {
-        margin: 4rem auto;
+        margin: 6rem auto;
         display: flex;
         flex-direction: column;
     }
