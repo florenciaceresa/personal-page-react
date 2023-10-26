@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect} from "react";
 import emailjs from '@emailjs/browser'
-import { event } from "jquery";
 import './Form.css'
 
 const Form = () => {
