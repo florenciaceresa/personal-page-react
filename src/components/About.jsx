@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import BtnPrimary from './BtnPrimary';
-import imagen from '../assets/fotoperfil1.png';
+import imagen from '../assets/fotoperfil2.png';
 import LinkToContact from './LinkToContact';
 import Footer from './Footer';
 
