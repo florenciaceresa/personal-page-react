@@ -14,10 +14,10 @@ function Hero() {
                     <img src={imagen} alt="Florencia Ceresa" />
                 </div>
                 <div className="info">
-                    <h1>Hola! Soy Florencia</h1>
-                    <p className='description'>Diseñadora y desarrolladora web Frontend</p>
-                    <p>Me apasiona la tecnología y el diseño en todas sus formas. Comencé mis estudios en diseño gráfico e incursioné en el mundo del diseño de experiencias e interfaces y el desarrollo Frontend, que me permitió conocer lo que realmente me gusta: diseñar y desarrollar productos digitales.</p>
-                    <p>En este espacio vas a conocer un poco sobre mí y sobre las cosas que hago, ¡bienvenido!</p>
+                    <h1>Hi! I am Florencia</h1>
+                    <p className='description'>Designer and frontend developer</p>
+                    <p>I am passionate about technology and design in all its forms. I started my studies in graphic design and entered the world of experience and interface design and Frontend development, which allowed me to learn what I really like: designing and developing digital products.</p>
+                    <p>In this place you will learn a little about me and the things I do, welcome!</p>
                 </div>
             </div>
         </section>

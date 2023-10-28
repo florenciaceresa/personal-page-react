@@ -11,8 +11,8 @@ function Contact() {
         <div>
             <section className="section-contact">
             <div className="container-contact">
-                <h2>CONTACTAME</h2>
-                <p>Completá el formulario o contactame a través de mi email. ¡Tengo muchas ganas de seguir sumando nuevas experiencias y creciendo en este hermoso mundo IT! ¡Espero tu mensaje!</p>
+                <h2>CONTACT ME</h2>
+                <p>Complete the form or contact me through my email. I really want to continue adding new experiences and growing in this beautiful IT world! Wait for your message!</p>
                 <div className="contact-item">
                         <div className="information">
                             <i className="bi bi-geo-alt-fill location"><a href="https://goo.gl/maps/CQzhxm2fiYZLmGFCA" target="_blank">&nbsp; Inriville, Córdoba, Argentina</a></i>

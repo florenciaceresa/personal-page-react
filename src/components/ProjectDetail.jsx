@@ -14,17 +14,17 @@ function ProjectDetail() {
     const proyectos = [
       { id: 1, 
         nombre: "Donata", 
-        type: "PROYECTO PERSONAL", 
-        descripcion1: "Donata es un proyecto realizado para el trabajo integrador final del módulo de diseño web (NUCBA).", 
-        descripcion2: "La consigna consistía en crear una landing page que contuviera una página principal con sus respectivas secciones y dos páginas enlazadas a la misma, una de ingreso y otra de registro.", 
-        descripcion3: "Como diseñadora gráfica, y como me gusta incorporar mis conocimientos en cada proyecto siempre que pueda, me encargué en primer lugar de diseñar la identidad visual de la marca. Si te interesa, podés verla en mi perfil de behance.", 
-        descripcion4: "Además, tuve en cuenta aspectos de UX, como una correcta arquitectura de la información, usabilidad, minimalismo, entre otros. " , 
-        descripcion5: "En cuanto al desarrollo, me centré en incorporar en este proyecto todos los conocimientos adquiridos en el módulo, y en realizar una estructura de código organizada, limpia, fácil de entender por otros desarrolladores. Seguiré iterando este trabajo, mejorándolo y añadiéndole nuevas funcionalidades." , 
-        descripcion6: "Podés ver el código del proyecto haciendo " , 
+        type: "PERSONAL PROJECT", 
+        descripcion1: "Donata is a project made for the final integrative work of the web design module (NUCBA).", 
+        descripcion2: "The brief was to create a landing page that contained a main page with its respective sections and two pages linked to it, one for entry and the other for registration.", 
+        descripcion3: "As a graphic designer, and since I like to incorporate my knowledge into each project whenever I can, I was first in charge of designing the visual identity of the brand. If you are interested, you can see it on my behance profile.", 
+        descripcion4: "I also took into account UX aspects, such as correct information architecture, usability, minimalism, etc." , 
+        descripcion5: "In development, I focused on incorporating into this project all the knowledge acquired in the module, and on creating an organized, clean code structure that was easy to understand by other developers. I will continue to iterate this work, improving it and adding new features." , 
+        descripcion6: "You can see the project code by " , 
         Imagen1,
         tecnologias: "HTML, CSS.",
-        github: <a href="https://github.com/florenciaceresa/integrator-nucba-web-design" target="_blank" className="link-github">click aquí.</a>,
-        seeproject: <a href="https://integrator-nucba-web-design.vercel.app/" target="_blank" className="btn-primary">Ver proyecto</a>},
+        github: <a href="https://github.com/florenciaceresa/integrator-nucba-web-design" target="_blank" className="link-github">clicking here.</a>,
+        seeproject: <a href="https://integrator-nucba-web-design.vercel.app/" target="_blank" className="btn-primary">Live demo</a>},
       { id: 2, nombre: "Proyecto 2", descripcion: "Descripción del proyecto 2", Imagen1 },
       { id: 3, nombre: "Proyecto 3", descripcion: "Descripción del proyecto 2", Imagen1 },
       // Agrega más proyectos aquí
@@ -51,7 +51,7 @@ function ProjectDetail() {
           <div className="description-project">
             <h2>Donata - Landing page</h2>
             <p className="project-type">{proyecto.type}</p>
-            <p>Tecnonolgías utilizadas: <span className="technologies">{proyecto.tecnologias}</span></p>
+            <p>Technologies: <span className="technologies">{proyecto.tecnologias}</span></p>
             <p>{proyecto.descripcion1}</p>
             <p>{proyecto.descripcion2}</p>
           </div>
@@ -61,7 +61,7 @@ function ProjectDetail() {
           <p>{proyecto.descripcion4}</p>
           <p>{proyecto.descripcion5}</p>
           <p>{proyecto.descripcion6}{proyecto.github}</p>
-          <p>Espero que te haya gustado, ¡Muchas gracias por leer!</p>
+          <p>I hope you liked it, thank you very much for reading!</p>
           {proyecto.seeproject}
 
         </div>

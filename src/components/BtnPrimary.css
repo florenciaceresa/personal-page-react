@@ -5,6 +5,7 @@
     padding: 0.5rem 1.5rem;
     color: var(--first-color);
     margin: 1rem 0;
+    text-align: center;
 }
 
 .btn-primary:hover {

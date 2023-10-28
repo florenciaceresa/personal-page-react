@@ -11,10 +11,12 @@ function About() {
             <section className='section-about' id='about'>
              <div className="container-about-1">
                 <div className="about-info">
-                <h2>SOBRE MÍ</h2>
-                    <p>Comencé a formarme en diseño gráfico, carrera en la cual estoy cursando las últimas materias, y de manera autodidacta y a través de recursos gratuitos descubrí el mundo del diseño UX/UI y el desarrollo web, que es lo que realmente me apasiona y a lo que quiero dedicarme.</p>
-                    <p>Me gusta participar en todas las etapas de la creación de un producto digital, desde el UX Research, pasando por todos los procesos de diseño, hasta la fase de desarrollo, en donde aplico mis conocimientos en programación.</p>
-                    <p>Lo que más me atrae de la tecnología es que brinda la oportunidad de implementar todos los conocimientos y crear cosas increíbles e innovadoras.</p>
+                <h2>ABOUT ME</h2>
+                    <p>I began training in graphic design, a career in which I am studying the latest subjects, and self-taught and through free resources I discovered the world of UX/UI design and web development, which is what I am really passionate about and where I want to go direct me.</p>
+                    <p>I like to participate in all stages of creating a digital product, from UX Research, through all the design processes, to the development phase, where I apply my programming skills.</p>
+                    <p>What I like most about technology is that it provides the opportunity to implement all the knowledge and create incredible and innovative things.</p>
+                    <p>I currently work as a freelance designer and participate in development projects to meet new people, network and gain experience.</p>
+                    <p>One of my main medium-term goals is to master English, a language that I love and that I study daily, and in the long term I would like to train in a career in systems.</p>
                 </div>
                 <div className='about-img'>
                     <img src={imagen} alt="Florencia Ceresa" />
@@ -23,14 +25,9 @@ function About() {
         </section>
         <section className='section-about' id='about'>
              <div className="container-about-2">
-                <div className='about-img'>
-                    <img src={imagen} alt="Florencia Ceresa" />
-                </div>
                 <div className="about-info">
-                    <p>Actualmente me desempeño como diseñadora de manera freelance y participo en proyectos de desarrollo para conocer nuevas personas, hacer networking y ganar experiencia. </p>
-                    <p>Uno de mis principales objetivos a mediano plazo es dominar el inglés, idioma que me encanta y que estudio a diario, y a largo plazo me gustaría formarme en una carrera en sistemas. </p>
-                    <p>Me caracterizo por ser una persona dedicada, organizada, responsable, curiosa y perseverante con mis objetivos, en búsqueda de mi primera oportunidad laboral en la industria IT 🙌🏻</p>
-                    <p>¡Muchas gracias por leerme! ¡Seguime en mis redes!</p>
+                    <p>I am characterized by being a dedicated, organized, responsible, curious and persevering person with my goals, in search of my first job opportunity in the IT industry 🙌🏻</p>
+                    <p>Thank you very much for reading me! Follow me on my social networks!</p>
                     <div className='social-media'>
                         <a href="https://www.linkedin.com/in/florenciaceresa/" target='_blank'><i className="bi bi-linkedin"></i></a>
                         <a href="https://github.com/florenciaceresa" target='_blank'><i className="bi bi-github"></i></a>

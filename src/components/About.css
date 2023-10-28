@@ -5,7 +5,7 @@
 
 .container-about-1 {
     display: flex;
-    margin: 8rem auto 4rem;
+    margin: 8rem auto 0;
     gap: 5rem;
     align-items: center;
     width: 75%;
@@ -13,7 +13,7 @@
 
 .container-about-2 {
     display: flex;
-    margin: 4rem auto 8rem;
+    margin: 0 auto 8rem;
     gap: 5rem;
     align-items: center;
     width: 75%;

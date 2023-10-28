@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import Imagen1 from '../assets/diseñoweb.jpg';
+import Imagen1 from '../assets/fondo.png';
 import LinkToContact from "./LinkToContact";
 import './Portfolio.css'
 import Footer from "./Footer";
@@ -18,8 +18,8 @@ function Portfolio() {
        <section className="section-portfolio">
         <div className="container-portfolio">
           <div className="description-portfolio">
-            <h2>MIS PROYECTOS</h2>
-            <p>Integro mis conocimientos en diferentes disciplinas como el desarrollo, diseño y marketing para crear proyectos más completos que respondan a las necesidades de manera integral.</p>
+            <h2>MY PROJECTS</h2>
+            <p>I integrate my skills in different disciplines such as development, design and marketing to create more complete projects that respond to needs comprehensively.</p>
           </div>
           {proyectos.map((proyecto) => (
             <div key={proyecto.id} className="container-project">

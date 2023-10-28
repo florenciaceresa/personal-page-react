@@ -38,16 +38,16 @@ function Navbar() {
       <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''} ${isScrolled && isMenuOpen ? 'scrolled-menu-open' : ''}`}>
         <div className="menu-options">
           <li className="menu-home">
-            <Link to="/" className={` ${location.pathname === '/' ? 'active' : ''} menu-option-item`}>INICIO</Link>
+            <Link to="/" className={` ${location.pathname === '/' ? 'active' : ''} menu-option-item`}>HOME</Link>
           </li>
           <li className="menu-about">
-            <Link to="/nosotros" className={`${location.pathname === '/nosotros' ? 'active' : ''} menu-option-item`}>SOBRE MI</Link>
+            <Link to="/nosotros" className={`${location.pathname === '/nosotros' ? 'active' : ''} menu-option-item`}>ABOUT</Link>
           </li>
           <li className="menu-portfolio">
             <Link to="/portfolio" className={`${location.pathname === '/portfolio' ? 'active' : ''} menu-option-item`}>PORTFOLIO</Link>
           </li>
           <li className="menu-contact">
-            <Link to="/contacto" className={`${location.pathname === '/contacto' ? 'active' : ''} menu-option-item`}>CONTACTO</Link>
+            <Link to="/contacto" className={`${location.pathname === '/contacto' ? 'active' : ''} menu-option-item`}>CONTACT</Link>
           </li>
         </div>
         <div className='menu-icons'>

@@ -83,24 +83,24 @@ return (
     <div>
         <form ref={refForm} action="" onSubmit={handleSubbmit} className="form">
             <div>
-                <label htmlFor="name">Nombre completo</label>
+                <label htmlFor="name">Full name</label>
                 <input type="text" name="name" required />
             </div>
             <div>
-                <label htmlFor="email">Correo electrónico</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" name="email" required />
                 {emailErrorMessage && (
                         <div className="error-message">{emailErrorMessage}</div>
                     )}
             </div>
             <div className="input-message">
-                <label htmlFor="message">Mensaje</label>
+                <label htmlFor="message">Message</label>
                 <input type="text" name="message" required />
                 {messageErrorMessage && (
                         <div className="error-message">{messageErrorMessage}</div>
                     )}
             </div>
-            <button className="btn-primary" type="submit">Enviar</button>
+            <button className="btn-primary" type="submit">Send</button>
         </form>
         {isFormSubmitted && (
             <div className="submit-message">{submitMessage}</div>

@@ -9,7 +9,7 @@ function Project({ id, nombre, imagen }) {
       <div className="container-project">
         <img src={imagen} className="img-project"/>
         <h3>{nombre}</h3>
-        <Link to={`/proyecto/${id}`} className="see-project">VER PROYECTO</Link>
+        <Link to={`/proyecto/${id}`} className="see-project">SEE PROJECT</Link>
       </div>
     </div>
   );
