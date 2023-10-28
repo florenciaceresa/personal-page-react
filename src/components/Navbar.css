@@ -119,7 +119,7 @@ nav.scrolled { /*Barra de navegación al hacer scroll*/
       .navbar-menu.open {
         display: flex; /* Muestra el menú cuando se abre */
         width: 100%;
-        height: 30vh;
+        height: 200px;
         background-color: #fff;
         margin-top: 1.5rem;
       }
