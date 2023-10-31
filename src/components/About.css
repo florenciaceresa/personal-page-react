@@ -71,7 +71,7 @@
 
     .container-about-2 {
         gap: 3rem;
-        margin: 4rem auto 6rem;
+        margin: 0 auto 6rem;
 
     }
 
@@ -79,7 +79,6 @@
         order: 2;
         display: flex;
         flex-direction: column;
-        text-align: center;
     }
 
 
@@ -97,6 +96,7 @@
         
     }
 
+    
 
 }
 
