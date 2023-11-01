@@ -11,7 +11,7 @@ function Hero() {
             <section className='section-hero'>
              <div className="container-hero">
                 <div className='hero-img'>
-                    <img src={imagen} alt="Florencia Ceresa" />
+                    <img src={imagen} alt="Florencia Ceresa"/>
                 </div>
                 <div className="info">
                     <h1>Hi! I am Florencia</h1>
