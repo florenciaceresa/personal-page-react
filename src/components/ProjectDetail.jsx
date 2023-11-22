@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import './ProjectDetail.css'
 import Imagen1 from '../assets/donata2.png';
 import Imagen2 from '../assets/veterinaria.png';
+import Imagen3 from '../assets/kinesiologia.png';
 import BtnPrimary from "./BtnPrimary";
 
 
@@ -45,7 +46,23 @@ function ProjectDetail() {
 
 
        },
-      { id: 3, nombre: "Proyecto", descripcion: "Descripción del proyecto 2", Imagen1 },
+      { id: 3, 
+        imagen: Imagen3,
+        nombre: "Centro de kinesiología",
+        type: "PROFESIONAL PROJECT", 
+        tecnologias: "HTML, CSS, Bootstrap, Vanila JavaScript.",
+        descripcion1: "This project is a landing page for a kinesiology center that contains different sections with information about it.", 
+        descripcion2: "This was my first project with javascript without any framework. The challenge was to add functionality to different parts of the website such as the menu, which changes color when scrolling, a modal window that opens", 
+        descripcion3: "when clicking on a button, a carousel that changes images every 3 seconds. This project allowed me to learn the basics of this programming language.",
+        descripcion4: "I also took into account UX aspects, such as correct information architecture, usability, minimalism, etc.", 
+        descripcion6: "You can see the project code by " , 
+        descripcion7: "I hope you liked it, thank you very much for reading!",
+        github: <a href="https://github.com/florenciaceresa/martin-maurizi-personal-page" target="_blank" className="link-github">clicking here.</a>,
+        seeproject: <a href="https://martin-maurizi-kinesiologia.vercel.app/" target="_blank" className="btn-primary">Live demo</a>,
+
+
+
+    },
       // Agrega más proyectos aquí
     ];
   

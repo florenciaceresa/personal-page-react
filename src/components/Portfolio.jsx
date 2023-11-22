@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import Imagen1 from '../assets/fondo.png';
+import Imagen1 from '../assets/portada-mm.png';
 import Imagen2 from '../assets/portada-donata.png';
 import Imagen3 from '../assets/portada-veterinaria-1.png'
 import LinkToContact from "./LinkToContact";
@@ -9,9 +9,9 @@ import Footer from "./Footer";
 
 function Portfolio() {
   const proyectos = [
-    { id: 1, nombre: "Donata - Landing page", imagen: Imagen2 },
+    { id: 1, nombre: "Donata", imagen: Imagen2 },
     { id: 2, nombre: "PetCareShop - Veterinaria", imagen: Imagen3 },
-    { id: 3, nombre: "Proyecto", imagen: Imagen1 },
+    { id: 3, nombre: "Centro de kinesiología", imagen: Imagen1 },
     // Agrega más proyectos aquí
   ];
 
