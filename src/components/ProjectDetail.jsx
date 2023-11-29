@@ -4,6 +4,7 @@ import './ProjectDetail.css'
 import Imagen1 from '../assets/donata2.png';
 import Imagen2 from '../assets/veterinaria.png';
 import Imagen3 from '../assets/kinesiologia.png';
+import Imagen4 from '../assets/todolist.png';
 import BtnPrimary from "./BtnPrimary";
 
 
@@ -63,6 +64,24 @@ function ProjectDetail() {
 
 
     },
+
+    { id: 4, 
+      imagen: Imagen4,
+      nombre: "To do list",
+      type: "PERSONAL PROJECT", 
+      tecnologias: "JSX, CSS, React js",
+      descripcion1: "This project is a to-do list application that is in its first stage of development.", 
+      descripcion2: "The functionalities it has are the following: add a new task, cross it out when it is completed and delete it. It has a counter that marks how many tasks have been completed. It also has dark mode.", 
+      descripcion3: "As in any project, design and user experience are essential. I took into account aspects such as the correct information architecture, usability, minimalism, colorimetry, etc.",
+      descripcion4: "My goal is to continue working on this project and make it a complete task organizer. Some of the future functionalities may be: editing each task, adding specific data (schedules, priorities), calendar, etc.", 
+      descripcion6: "You can see the project code by " , 
+      descripcion7: "I hope you liked it, thank you very much for reading!",
+      github: <a href="https://github.com/florenciaceresa/to-do" target="_blank" className="link-github">clicking here.</a>,
+      seeproject: <a href="https://to-do-list-blue-eight-92.vercel.app/" target="_blank" className="btn-primary">Live demo</a>,
+
+
+
+  },
       // Agrega más proyectos aquí
     ];
   
